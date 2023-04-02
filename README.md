@@ -7,11 +7,16 @@ a. Using NumPy create random vector of size 15 having only Integers in the range
 1. Reshape the array to 3 by 5
 2. Print array shape.
 3. Replace the max in each row by 0
+
 ----> •	To perform the array operations the code uses the numpy libraries. 
+
 •	To create a random vector of size 15 with integers in the range of 1-20, numpy random module’s randint() function is used. 
+
 •	The reshape() method is used to convert the 1-dimensional vector to a 2-dimensional array of shape 3x5. 
+
 •	Replacing the maximum element of each row with 0: random_vector[np.arange(len(random_vector)), np.argmax(random_vector, axis=1)] = 0 (This line replaces the maximum value of each row in the random_vector array with 0. The np.argmax() function is used to get the index of the maximum value in each row,and the np.arange() function is used to create an array of indices from 0 to the length of the array minus 1)
-•	create a 2-dimensional array of size 4 x 3. 
+•	create a 2-dimensional array of size 4 x 3.
+
 •	The dtype parameter is used to set the data type of the array to 32-bit integer.
 
 
@@ -46,8 +51,11 @@ a. Using NumPy create random vector of size 15 having only Integers in the range
 [ 1 0]]    
 
 ---> •	The code starts by importing the NumPy library.
+
 •	The square array is defined by square_arr = np.array([[3, -2], [1, 0]]). This line defines a 2x2 NumPy array named square_arr and initializes it with the values [[3, -2], [1, 0]].
+
 •	To calculate the eigenvalues and eigenvectors of square_arr the line uses the NumPy linalg.eig() function. This function takes the square_arr as an argument and returns two NumPy arrays: eigvals and eigvecs. eigvals is a 1D array containing the eigenvalues of square_arr, and eigvecs is a 2D array containing the eigenvectors of square_arr.
+
 •	Finally, the code calculates the eigenvalues and eigenvectors of the 2x2 array [[3, -2], [1, 0]] using the NumPy linalg.eig() function, and then prints the results.
 
             import numpy as np
@@ -67,7 +75,9 @@ a. Using NumPy create random vector of size 15 having only Integers in the range
 [3 4 5]]   
 
 ---> •	We have defined the numpy array which initializes it with the values [[0, 1, 2], [3, 4, 5]].
+
 •	The NumPy trace() function is used to compute the sum of the diagonal elements of my_array.
+
 •	The code calculates the sum of the diagonal elements of a 2x3 NumPy array [[0, 1, 2], [3, 4, 5]] using the NumPy trace() function, and then prints the array and the sum of its diagonal elements.
 
           import numpy as np
@@ -88,6 +98,7 @@ Reshape 2x3:
 [4 5 6]]     
 
 --->•	A 2D NumPy array named my_array with shape (3,2) and initializes it with the values [[1, 2], [3, 4], [5, 6]].
+
 •	the NumPy reshape() function is used to reshape my_array into a new array new_array of shape (2, 3). The reshape() function takes two arguments: the first argument is the original array to be reshaped, and the second argument is the new shape of the array. In this case, the reshape() function reshapes my_array into a 2x3 array.
 •	The print() function is used to display the arrays.
 
@@ -111,11 +122,17 @@ Programming languages: Java, Python, PHP, JavaScript, C#, C++
 Popularity: 22.2, 17.6, 8.8, 8, 7.7, 6.7
 
 --->•	the pyplot module from the matplotlib library is imported.
+
 •	prog_languages and popularity_scores has been defined and prog_languages list contains the names of different programming languages and the popularity_scores list contains their popularity scores.
+
 •	highest_score_index = popularity_scores.index(max(popularity_scores))[This line finds the index of the highest popularity score in the popularity_scores list].
+
 •	define an explode list to create an effect of separating out the slice corresponding to the language with the highest popularity score.
+
 •	the pie chart using the pie() function from pyplot takes the popularity_scores and prog_languages lists as input data, and uses the explode_list to separate out the slice corresponding to the highest score language.
+
 •	plt.title sets the title of the pie chart.
+
 •	plt.show() displays the pie chart.
 
 
